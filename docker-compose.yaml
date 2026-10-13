@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: 30-seconds-of-code
+    ports:
+      - "9000:9000"
+    restart: unless-stopped
